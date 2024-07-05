@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    td {
+      border: 2px solid aqua;
+
+      border-collapse: collapse;
+      box-shadow: 5px 5px 5px aquamarine;
+    }
+    h2 {
+      text-shadow: 2px 2px 2px darkmagenta;
+      border: 2px solid;
+    }
+    .t1 {
+      height: 30vh;
+      width: 50vw;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+    .t2 {
+      height: 40vh;
+      width: 50vw;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+    .t3 {
+      height: 70vh;
+      width: 50vw;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+    @media screen and (max-width: 425px) {
+      .t2,
+      .t3 {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 426px) and (max-width: 760px) {
+      .t1,
+      .t3 {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 761px) {
+      .t1,
+      .t2 {
+        display: none;
+      }
+    }
+    .ss{
+      background-image: linear-gradient(to right, orange,white,green);
+    }
+     .yy{
+      background-image: radial-gradient(orange,white,green);
+     }
+     .tt{
+      background-image:repeating-radial-gradient(green,yellow,blue,white,pink,black);
+     }
+  </style>
+</head>
+<body>
+
+
+  <table class="t1">
+    <caption>
+      <h2>TABLE-1</h2>
+    </caption>
+    <tr>
+      <td class="ss"></td>
+      <td class="tt"></td>
+    </tr>
+    <tr>
+      <td class="tt"></td>
+      <td class="yy"></td>
+    </tr>
+  </table>
+
+
+  <table class="t2">
+    <caption>
+      <h2>TABLE-2</h2>
+    </caption>
+    <tr>
+      <td style="background-color: brown"></td>
+      <td class="tt"></td>
+      <td style="background-color: rgb(87, 35, 17)"></td>
+    </tr>
+    <tr>
+      <td style="background-color: darkgoldenrod"></td>
+      <td class="ss"></td>
+      <td style="background-color: rgb(107, 84, 76)"></td>
+    </tr>
+    <tr>
+      <td class="ss"></td>
+      <td style="background-color: tomato"></td>
+      <td class="tt"></td>
+    </tr>
+  </table>
+
+
+  <table class="t3">
+    <caption>
+      <h2>TABLE-3</h2>
+    </caption>
+    <tr>
+      <td style="background-color: brown"></td>
+      <td style="background-color: rgb(25, 54, 117)"></td>
+      <td class="tt"></td>
+      <td style="background-color: rgb(87, 35, 17)"></td>
+    </tr>
+    <tr>
+      <td class="yy"></td>
+      <td style="background-color: tomato"></td>
+      <td style="background-color: rgb(22, 148, 79)"></td>
+      <td style="background-color: rgb(107, 84, 76)"></td>
+    </tr>
+    <tr>
+      <td class="yy"></td>
+      <td style="background-color: rgb(107, 84, 76)"></td>
+      <td class="tt"></td>
+      <td style="background-color: rgb(107, 84, 76)"></td>
+    </tr>
+    <tr>
+      <td class="yy"></td>
+      <td style="background-color: tomato"></td>
+      <td style="background-color: coral"></td>
+      <td class="tt"></td>
+    </tr>
+  </table>
+  </body>
+</html>
